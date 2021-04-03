@@ -2,7 +2,7 @@
 % Please edit documentation in R/kittypics_df_maker.R
 \name{kitty_pics_df}
 \alias{kitty_pics_df}
-\title{Prepare a dataframe with URLs for cat pics.}
+\title{Prepare a dataframe with URLs for cat pictures.}
 \usage{
 kitty_pics_df(url, ...)
 }
@@ -16,11 +16,10 @@ extracted.}
 A tibble containing extracted details from the provided URL.
 }
 \description{
-\Sexpr[results=rd, stage=render]{rlang:::lifecycle("maturing")}
-
 Mostly useful for internal workings of this package, this function extracts
 images at given URL and returns it in a dataframe.
 }
 \examples{
+set.seed(123)
 kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")
 }
